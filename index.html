@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>Nature</span>
+        </div>
+        <div id="about">
+            <a href="#main" onclick="slowScroll('#main')" title="Проекты">Проекты</a>
+            <a href="#overview" onclick="slowScroll('#overview')" title="Новости">Новости</a>
+            <a href="#contacts" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+            <a href="" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+        </div>
+    </header>
+
+    <div id="top">
+        <h1>Сохранение природы</h1>
+        <h3>это образ жизни!</h3>
+    </div>
+
+    <div id="main">
+        <div class="intro">
+            <h2>Наша миссия</h2>
+            <span>Думай глобально, действуй локально</span>
+        </div>
+        <div class="text">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam dolore, praesentium iusto velit quae, animi similique deserunt voluptas numquam iste corrupti temporibus accusantium asperiores eaque, voluptate voluptatem quo laboriosam?</span>
+        </div>
+    </div>
+
+    <div id="faq">
+        <div>
+            <span class="title">Участие</span><br>
+            <span class="heading">Пожертвования</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laudantium ipsam omnis nisi dolores natus amet inventore accusamus saepe nobis consectetur eos a, dicta quos, incidunt quidem dignissimos ad odio.</p>
+            <span class="heading">Волонтерство</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laudantium ipsam omnis nisi dolores natus amet inventore accusamus saepe nobis consectetur eos a, dicta quos, incidunt quidem dignissimos ad odio.</p>
+            <span class="heading">Профессиональное</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laudantium ipsam omnis nisi dolores natus amet inventore accusamus saepe nobis consectetur eos a, dicta quos, incidunt quidem dignissimos ad odio.</p>
+        </div>
+        <div>
+            <span class="title">Направления</span><br>
+            <span class="heading">Сохранение</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laudantium ipsam omnis nisi dolores natus amet inventore accusamus saepe nobis consectetur eos a, dicta quos, incidunt quidem dignissimos ad odio.</p>
+            <span class="heading">Восстановление</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laudantium ipsam omnis nisi dolores natus amet inventore accusamus saepe nobis consectetur eos a, dicta quos, incidunt quidem dignissimos ad odio.</p>
+            <span class="heading">Просвещение</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laudantium ipsam omnis nisi dolores natus amet inventore accusamus saepe nobis consectetur eos a, dicta quos, incidunt quidem dignissimos ad odio.</p>
+        </div>
+        <div>
+            <span class="title">Проекты</span><br>
+            <span class="heading">Сохранение лесов</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laudantium ipsam omnis nisi dolores natus amet inventore accusamus saepe nobis consectetur eos a, dicta quos, incidunt quidem dignissimos ad odio.</p>
+            <span class="heading">Зеленый город</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laudantium ipsam omnis nisi dolores natus amet inventore accusamus saepe nobis consectetur eos a, dicta quos, incidunt quidem dignissimos ad odio.</p>
+            <span class="heading">Социальные</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laudantium ipsam omnis nisi dolores natus amet inventore accusamus saepe nobis consectetur eos a, dicta quos, incidunt quidem dignissimos ad odio.</p>
+        </div>
+    </div>
+
+    <div id="overview">
+        <h2>Последние публикации</h2>
+        <h4>Главное о самом важном</h4>
+
+        <div class="img">
+            <img src="images/scopa.jpg" alt="" width="100%">
+            <span><a href="">В лесу Ротимурчус скопы могут исчезнуть</a></span>
+        </div>
+        <div class="img">
+            <img src="images/for-estern-leopard.jpg" alt="">
+            <span><a href="">Дальневосточный леопард - величественная таежная кошка</a></span>
+        </div>
+        <div class="img">
+            <img src="images/cachalot.jpg" alt="">
+            <span><a href="">Согласно красной книге, кашалоты имеют уязвимый статус</a></span>
+        </div>
+        <div class="img">
+            <img src="images/wind_farm.jpg" alt="">
+            <span><a href="">Ульяновская ветровая электростанция самая крупная в России</a></span>
+        </div>
+    </div>
+
+    <div id="contacts">
+        <center>
+            <h5>Обратная связь</h5>
+        </center>
+        <form action="" id="form_input">
+            <label for="name">Имя <span>*</span></label><br>
+            <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+            <label for="email">Ваша почта <span>*</span></label><br>
+            <input type="email" placeholder="Введите email" name="email" id="email"><br>
+            <label for="message">Сообщение <span>*</span></label><br>
+            <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+            <div id="mess_send" class="btn">Отправить</div>
+        </form>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top //скролить сверху объект по id отступ offset() сверху top
+            }, 500); // 1ый параметр ф-ция что делать animate 2ой время 500мс
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+    
+</body>
+</html>
